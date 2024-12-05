@@ -1,0 +1,10 @@
+If in a binary tree every node has two child except leaf node then it is called full binary tree.
+
+If in a binary tree the second last level node has two child but last level node complete from left side 
+to right side and second last level right side node has left node then it is called complete binary.
+
+Heap is complete binary tree. 
+If in hip every node is larger than both child nodes then it is max hip
+If in hip every node is smaller than both child nodes then it is min hip
+
+Max heap: Every node is similar or larger than both child nodes

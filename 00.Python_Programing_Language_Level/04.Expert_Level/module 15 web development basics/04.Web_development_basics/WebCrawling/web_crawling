@@ -1,0 +1,6 @@
+Suppose there is an e-commerce website where are different typees of items information we want to save it 
+in computer if there are thousands it will take a lot of time so we can make a program in python that will do the work for us. We can call it robot or in short bot
+
+Web crawler is a program or bot who can browse internet by it's self and collect information.
+
+We can make a certain crawler for a certain website

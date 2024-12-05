@@ -1,0 +1,39 @@
+Binary search tree is a special type of tree where every node's left side child value is lesser than the 
+paerent node and right side child value is higher than the parent node
+In Bst the smallest node of right side of a subtree of a node is called successor
+In Bst the bigest node of left side of a subtree of a node is called predecessor
+
+
+### Finding the Successor
+1. **Right Subtree Exists**:
+   - If the node has a right child, the successor is the smallest node in the right subtree.
+   - To find this, go to the right child and then keep going to the left child until you reach a node with no left child.
+
+2. **No Right Subtree**:
+   - If the node does not have a right child, the successor is one of its ancestors.
+   - Move up the tree using the parent pointers until you find a node which is the left child of its parent. The parent of this node is the successor.
+
+### Finding the Predecessor
+1. **Left Subtree Exists**:
+   - If the node has a left child, the predecessor is the largest node in the left subtree.
+   - To find this, go to the left child and then keep going to the right child until you reach a node with no right child.
+
+2. **No Left Subtree**:
+   - If the node does not have a left child, the predecessor is one of its ancestors.
+   - Move up the tree using the parent pointers until you find a node which is the right child of its parent. The parent of this node is the predecessor.
+
+### Example
+Consider the following BST:
+```
+       20
+      /  \
+    10    30
+    / \   / \
+   5  15 25  35
+```
+- **Successor of 10**: The smallest node in the right subtree of 10 is 15.
+- **Predecessor of 30**: The largest node in the left subtree of 30 is 25.
+
+### Key Points
+- **In-order Traversal**: Successors and predecessors are closely related to the in-order traversal of the BST. The successor of a node is the next node in the in-order traversal, and the predecessor is the previous node.
+- **Parent Pointers**: Having parent pointers in the nodes can simplify finding successors and predecessors when the right or left subtree does not exist.

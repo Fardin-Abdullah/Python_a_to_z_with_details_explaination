@@ -1,0 +1,5 @@
+in the example when we called factorial(4) it checks the first two condition and goes t the 3rd and called
+factorial(4-1) before calling it in his stack memory he puts the value of n = 4 and also the location and 
+again when in the it's in factorial(3) he will put 3 in stacks and also the location like this once the n 
+will be 1 so our stack will be like this 2-->3-->4  when n is 1 it will return 1 now next it will go where
+was called factorial(1) now it will pop the previous data from stack
